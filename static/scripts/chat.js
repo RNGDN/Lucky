@@ -1,23 +1,23 @@
 // Collapsible
 
-// var coll = document.getElementsByClassName("collapsible");
+var coll = document.getElementsByClassName("collapsible");
 
-// for (let i = 0; i < coll.length; i++) {
-//     coll[i].addEventListener("click", function () {
-//         this.classList.toggle("active");
-//         var content = this.nextElementSibling;
-//         if (content.style.maxHeight) {
-//             content.style.maxHeight = null;
-//         } else {
-//             content.style.maxHeight = content.scrollHeight + "px";
-//         }
-//     });
+for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
 
-//     // Initialize each content section to be collapsed
-//     var content = coll[i].nextElementSibling;
-//     content.style.maxHeight = null; 
-//     // Set maxHeight to null to ensure it's collapsed initially
-// }
+    // Initialize each content section to be collapsed
+    var content = coll[i].nextElementSibling;
+    content.style.maxHeight = null; 
+    // Set maxHeight to null to ensure it's collapsed initially
+}
 
 function getTime() {
     let today = new Date();
